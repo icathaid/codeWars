@@ -1,3 +1,4 @@
-function pol(){
-    console.log('I\'m alive!');
-};
+var replaceDots = function(str) {
+    var newStr = str.replace(/\./g, '-');
+    return newStr;
+  }
