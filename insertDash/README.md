@@ -1,0 +1,1 @@
+I started building out the function a piece at a time.  I left the original functions in as a reference/journal of progress, but only dashMyNums() at the bottom is relevant.
