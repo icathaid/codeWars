@@ -38,7 +38,6 @@ function dashMyNums(james){
     let numBox = [];
     let boxOfNums = [];
     let stringJames = james.toString().split("");
-    console.log(stringJames);
     stringJames.forEach(function(ana){
         numBox.push(parseInt(ana))
     });
@@ -48,10 +47,8 @@ function dashMyNums(james){
         } else {
             boxOfNums.push(numBox[i]);
         };
-
     };
-    console.log(boxOfNums.join(""));
-    console.log(numBox);
+    return boxOfNums.join("");
 };
 
 // everything works if you feed the function 21 digits or less, when it begins inserting letters and symbols like 'e', '+', ',' into numBox, which creates NaN errors during the odd/even check.  Baffled.
