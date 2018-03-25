@@ -1,8 +1,8 @@
-let unCappedString = [];
-let cappedStringA = [];
-let cappedStringB = [];
-let cappedStrings = [];
-function capEveryOther(string){
+function capitalize(string){
+    let unCappedString = [];
+    let cappedStringA = [];
+    let cappedStringB = [];
+    let cappedStrings = [];
     unCappedString = string.split("");
     for (var i = 0; i < unCappedString.length; i++){
         if (i === 0) {
