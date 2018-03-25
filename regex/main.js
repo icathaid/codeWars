@@ -1,5 +1,4 @@
-function validateUsr(username) {
-  res =  /^[a-z_\d]{4,16}$/.test(username);
-  console.log(res);
-  return res
+function validatePIN (pin) {
+  res = /(^\d{4}$)|^(\d{6})$/.test(pin);
+  return res;
 }
