@@ -1,15 +1,21 @@
 let unCappedString = [];
-let cappedString = [];
+let cappedStringA = [];
+let cappedStringB = [];
+let cappedStrings = [];
 function capEveryOther(string){
     unCappedString = string.split("");
     for (var i = 0; i < unCappedString.length; i++){
         if (i === 0) {
-            cappedString.push(unCappedString[i].toUpperCase())
+            cappedStringA.push(unCappedString[i].toUpperCase());
+            cappedStringB.push(unCappedString[i]);
         } else if (Number.isInteger(i/2)) {
-            cappedString.push(unCappedString[i].toUpperCase())
+            cappedStringA.push(unCappedString[i].toUpperCase());
+            cappedStringB.push(unCappedString[i]);
         } else {
-            cappedString.push(unCappedString[i])
+            cappedStringA.push(unCappedString[i])
+            cappedStringB.push(unCappedString[i].toUpperCase());
         };
     };
-    return cappedString.join().replace(/\,/g, "");
+    cappedStrings.push(cappedStringA.join(''), cappedStringB.join(''));
+    return cappedStrings;
 };
