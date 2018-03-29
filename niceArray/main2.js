@@ -1,6 +1,9 @@
 'use strict'
 let tempArr = [];
-function checkArr(arr){
+function isNice(arr){
+    if(!arr.length){
+        return false;
+    };
     tempArr = arr;
     return tempArr.every(checkVal);
 };
