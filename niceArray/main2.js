@@ -12,5 +12,3 @@ function checkVal(currentVal){
         if(currentVal + 1 === tempArr[i] || currentVal - 1 === tempArr[i]){
             return true;
         };
-    };
-};
