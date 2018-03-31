@@ -1,0 +1,1 @@
+function pol = () => {console.log('I\'m Alive!!!')};
