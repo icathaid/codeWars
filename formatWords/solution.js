@@ -1,37 +1,29 @@
 'use strict';
-function formatWords(words){
-    let ted = words;
-    for(var i = 0; i < ted.length; i++){
-        if(ted[i].length === 0){
-            ted.splice(i, 1);
-        };
+function formatWords(arr){
+    if(!arr){
+        return '';
     };
     let bill = [];
-    if(ted.length === 0){
+    let ted = [];
+    for(var i = 0; i < arr.length; i++){
+        if(arr[i].length > 0){
+            bill.push(arr[i]);;
+        }
+    };
+    let james = bill.join(' ');
+    if(bill.length < 1){
         return '';
-    } else if(ted.length === 1){
-        return ted[0];
-    } else if(ted.length === 2){
-        return ted[0] + ' and ' + ted[1];
-    } else if(ted.length === 3) {
-        bill.push(words[0] + ', ' + ted[1] + ' and ' + ted[2]);
-        return bill.join('');
-    } else if(ted.length > 3){
-        for(var i = 0; i < (ted.length -2); i++){
-            bill.push(ted[i] + ', ');
+    } else if(bill.length === 1){
+        return bill[0];
+    } else if(bill.length === 2){
+        return bill[0] + ' and ' + bill[1];
+    } else if(bill.length === 3){
+        return bill[0] + ', ' + bill[1] + ' and ' + bill[2];
+    } else {
+        for(var i = 0; i < bill.length - 2; i++){
+            ted.push(bill[i]);
         };
-        bill.push(ted[ted.length -2] + ' and ');
-        bill.push(ted[ted.length -1]);
-        return bill.join('');
+        return ted.join(', ') + ', ' + bill[bill.length -2] + ' and ' + bill[bill.length -1];
     };
-};
-
-function removeCommas(words){
-    let james = words;
-    for(var i = 0; i < james.length; i++){
-        if(james[i].length === 0){
-            james.splice(i, 1);
-        };
-    };
-    return james.join('');
+    return console.log('end of script');
 };
