@@ -25,3 +25,13 @@ function formatWords(words){
         return bill.join('');
     };
 };
+
+function removeCommas(words){
+    let james = words;
+    for(var i = 0; i < james.length; i++){
+        if(james[i].length === 0){
+            james.splice(i, 1);
+        };
+    };
+    return james.join('');
+};
