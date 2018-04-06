@@ -1,0 +1,1 @@
+I had already done this one previously on my own, so I refactored it (I was storing the output in a variable where I didn't need to) and renamed the file to solution.js.
