@@ -7,4 +7,3 @@ Test.assertEquals(formatWords(['ninja', '', 'ronin']), "ninja and ronin")
 Test.assertEquals(formatWords([]), '')
 
 The rest of it we worked on independently.  I helped her debug one thing but I didn't feel right using the code she had already finished, so I saved this part in notes.md and reworked the rest on my own.
-
